@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 100%;
+}
+.text-color{
+    /* color: rgb(163, 214, 234); */
+    color: rgb(163, 214, 234);
+}
+h1{
+    padding-right: 60px;
+}
+.bannar{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url(/assets/images/purple-lavender-color-background-free-vector\ \(1\).jpg); */
+    background-image: url(/assets/images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+.bannar-left{
+    max-width: 50%;
+    background-color: antiquewhite;
+    /* position: relative; */
+}
+.bannar-left img{
+max-width: 35%;
+position: absolute;
+top: 15%;
+left: 6%;
+}
+.bannar-right{
+    /* background-color: bisque; */
+    max-width: 50%;
+    /* color: rgba(245, 245, 245, 0.923); */
+    /* color: rgba(245, 245, 245, 0.833); */
+    color: rgba(245, 245, 245, 0.833);
+    font-size: 45px;
+    text-align: right;
+}
+.photoframe img{
+
+    position: absolute;
+    z-index: 1;
+    max-width: 40%;
+}
+.photo img{
+    /* position: absolute; */
+    /* max-width: 40%; */
+    /* border: 10px solid rgba(103, 15, 219, 0.445); */
+    border: 8px solid rgba(103, 15, 219, 0.345);
+    border-radius: 50%;
+    top: 20%;
+}
