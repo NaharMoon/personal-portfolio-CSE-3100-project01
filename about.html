@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About – Nazmun Nahar Moon</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (social icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <style>
+        :root {
+            --teal: #08b4c7;
+            /* left panel color */
+            --text: #1b1b1b;
+            --muted: #6b6b6b;
+            --shadow: 0 12px 30px rgba(0, 0, 0, .08);
+            --radius: 16px;
+            --maxw: 1100px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0px;
+            margin-top: 120px;
+            font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            color: var(--text);
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        .wrap {
+            max-width: var(--maxw);
+            margin: 60px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        /* LEFT CARD */
+        .card {
+            position: relative;
+            background: var(--teal);
+            border-radius: var(--radius);
+            min-height: 550px;
+            padding: 120px 44px 48px;
+            box-shadow: var(--shadow);
+            color: #fff;
+            text-align: center;
+            overflow: visible;
+        }
+
+        .avatar {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -40%);
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 10px solid #fff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+            background: #eee;
+        }
+
+        .hello {
+            margin: 12px 0 10px;
+            font-weight: 800;
+            letter-spacing: .5px;
+            font-size: 28px;
+        }
+
+        .name {
+            display: block;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            margin: 16px auto 28px;
+            font-size: 13px;
+            line-height: 1.8;
+            max-width: 260px;
+            color: #e9f9fb;
+            opacity: .95;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .social a {
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            transition: transform .15s ease, background .15s ease, color .15s ease;
+        }
+
+        .social a:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, .18);
+        }
+
+        /* RIGHT CONTENT */
+        .content h1 {
+            font-size: 46px;
+            line-height: 1.1;
+            margin: 6px 0 18px;
+            font-weight: 800;
+        }
+
+        .content p {
+            color: var(--muted);
+            margin: 0 0 10px;
+            text-align: justify;
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 26px;
+            padding: 14px 28px;
+            border: 2px solid var(--teal);
+            border-radius: 999px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-decoration: none;
+            color: var(--text);
+            transition: background .15s ease, color .15s ease, transform .15s ease;
+        }
+
+        .cta:hover {
+            background: var(--teal);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 980px) {
+            .wrap {
+                grid-template-columns: 1fr;
+                gap: 36px;
+                margin: 40px auto;
+            }
+
+            .card {
+                max-width: 520px;
+                margin: 0 auto;
+            }
+
+            .content h1 {
+                font-size: 40px
+            }
+        }
+
+        @media (max-width: 520px) {
+            .wrap {
+                padding: 0 16px
+            }
+
+            .card {
+                padding: 110px 26px 40px
+            }
+
+            .avatar {
+                width: 150px;
+                height: 150px;
+                transform: translate(-50%, -38%)
+            }
+
+            .hello,
+            .name {
+                font-size: 24px
+            }
+
+            .content h1 {
+                font-size: 34px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="wrap">
+        <!-- LEFT PANEL -->
+        <section class="card">
+            <!-- PROFILE PHOTO: images/profile.jpg -->
+            <img class="avatar" src="./assets/images/photo3.png" alt="Profile">
+            <h2 class="hello">HELLO, I'M</h2>
+            <span class="name">MOON</span>
+
+            <p class="tagline">
+                KUET (2k21 batch).<br>
+                I enjoy Web Development.<br>
+                Also love Analog & Digital Electronics labs and Microprocessor work.
+            </p>
+
+            <div class="social" aria-label="Social links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+
+        <!-- RIGHT CONTENT -->
+        <section class="content">
+            <h1>About Me</h1>
+            <p>
+                I'm <strong>Nazmun Nahar Moon</strong>, a 3rd-year ECE student at
+                <strong>Khulna University of Engineering & Technology (KUET)</strong>, 2k21 batch.
+            </p>
+            <p>
+                I completed my SSC from <strong>Govt. Coronation Girls' High School</strong> and
+                HSC from <strong>Govt. M.M. City College</strong>, Khulna.
+            </p>
+            <p>
+                I’m passionate about <strong>microprocessors</strong>, <strong>analog/digital circuits</strong>,
+                and <strong>coding</strong>. Currently, I’m exploring <strong>web development</strong>
+                through my Web Programming Laboratory.
+            </p>
+            <p>
+                Beyond academics, I enjoy organizing ideas, learning new skills, and exploring both
+                the physical and digital world.
+            </p>
+
+            <a href="#" class="cta">CONTACT ME</a>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

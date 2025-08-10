@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Skills</title>
+
+    <style>
+        /* ====== Basic Theme (light) ====== */
+        :root {
+            /* --bg:#f7f9fc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#e5e7eb;
+      --blue:#2563eb;
+      --shadow:0 8px 24px rgba(2,6,23,.06);
+      --radius:16px;
+      --wrap:980px; */
+
+            --brand: #a86df6;
+            /* --accent: #a3d6ea; */
+            --accent: #7abbd5;
+            --panel: #f6fbff;
+            --panel-2: #e9f6ff;
+
+            --bg: #f6fbff;
+            --card: #e9f6ff;
+            --text: #0f172a;
+            --muted: #475569;
+            --line: #cdd3eb;
+            --blue: #7084f8;
+            --shadow: 0 8px 24px rgba(2, 6, 23, .06);
+            --radius: 16px;
+            --wrap: 980px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        .wrap {
+            max-width: var(--wrap);
+            margin: 56px auto;
+            padding: 0 20px;
+        }
+
+        /* ====== Heading ====== */
+        h1 {
+            font-size: clamp(28px, 5vw, 44px);
+            line-height: 1.1;
+            margin: 0 0 28px;
+            font-weight: 700;
+            color: var(--brand);
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 0 0 18px;
+            color: var(--accent);
+        }
+
+        /* ====== Card ====== */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px;
+        }
+
+        /* ====== Programming list + progress bar ====== */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .skills-list li {
+            display: grid;
+            grid-template-columns: 44px 1fr 260px;
+            /* আইকন • নাম • প্রগ্রেস */
+            align-items: center;
+            gap: 12px;
+            padding: 12px 8px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .skills-list li:last-child {
+            border-bottom: 0
+        }
+
+        /* left side round icon */
+        .badge {
+            width: 28px;
+            height: 28px;
+            display: grid;
+            place-items: center;
+            background: #d7e2f7;
+            color: var(--blue);
+            border-radius: 8px;
+            font-weight: 700;
+        }
+
+        /* progress bar */
+        .meter {
+            height: 10px;
+            background: #eef2ff;
+            border-radius: 999px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            background: var(--blue);
+            width: 25%;
+            border-radius: 999px;
+            transition: width .4s ease;
+        }
+
+        /* skill meter specefied */
+        .c {
+            width: 80%
+        }
+
+        .cpp {
+            width: 65%
+        }
+
+        .html {
+            width: 60%
+        }
+
+        .css {
+            width: 55%
+        }
+
+        /* ====== Lower Two Cards ====== */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 720px) {
+            .skills-list li {
+                grid-template-columns: 44px 1fr;
+            }
+
+            .meter {
+                margin-top: 8px
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Lower card list */
+        .plain-list {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .plain-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 6px;
+            color: var(--muted);
+        }
+
+        /* lower part list check circle */
+        .tick {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--blue);
+            opacity: .9;
+            box-shadow: 0 0 0 3px #eaf1ff inset;
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 14px
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap">
+        <h1>My skills</h1>
+
+        <!-- Large Card: Programming Languages -->
+        <section class="card">
+            <h2>Programming Languages</h2>
+            <ul class="skills-list">
+
+                <li>
+                    <div class="badge">C</div>
+                    <div>C</div>
+                    <div class="meter">
+                        <div class="fill c"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="badge">C</div>
+                    <div>C++</div>
+                    <div class="meter">
+                        <div class="fill cpp"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="badge">C</div>
+                    <div>HTML</div>
+                    <div class="meter">
+                        <div class="fill html"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="badge">C</div>
+                    <div>CSS</div>
+                    <div class="meter">
+                        <div class="fill css"></div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- Lower Small Cards -->
+        <section class="grid-2">
+            <div class="card">
+                <h2>Tools/Software</h2>
+                <ul class="plain-list">
+                    <li><span class="tick"></span> MATLAB</li>
+                    <li><span class="tick"></span> Proteus</li>
+                    <li><span class="tick"></span> VS Code</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Extra Skills</h2>
+                <ul class="plain-list">
+                    <li><span class="tick"></span> Git</li>
+                    <li><span class="tick"></span> PowerPoint</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

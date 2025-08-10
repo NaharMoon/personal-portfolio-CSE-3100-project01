@@ -2,34 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nazmun Nahar Moon — Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Merriweather:wght@800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
 
-        <div class="bannar">
-            <div class="bannar-left">
-                <div class="photoframe">
-                    <!-- <img src="./assets/images/circle2.png" alt=""> -->
-                </div>
-                <div class="photo">
-                    <img src="./assets/images/photo3.png" alt="">
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <a class="brand" href="#home">Moon</a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+
+        <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About Me</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a class="active" href="skills.html">Skills</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="avatar-wrap">
+                    <img class="avatar" src="./assets/images/photo3.png" alt="Nazmun Nahar Moon">
+                    <span class="ring"></span>
                 </div>
             </div>
-            <div class="bannar-right">
-                <h1>Nazmun <span class="text-color">Nahar</span> Mo<span class="text-color">on</span></h1>
+
+            <div class="hero-right">
+                <h1 class="title">
+                    Nazmun <span class="accent">Nahar</span> M<span class="accent">oon</span>
+                </h1>
+                <p class="tagline">
+                    KUET ECE (2k21). Web Development enthusiast with a love for
+                    Analog & Digital Electronics and Microprocessors.
+                </p>
+                <div class="cta-row">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn ghost">Contact Me</a>
+                </div>
             </div>
         </div>
-
     </header>
 
-    <footer>
-        <!-- <img src="./assets/images/purple-lavender-color-background-free-vector (1).jpg" alt=""> -->
-    </footer>
+    <!-- Placeholder sections (পরে কনটেন্ট যোগ করবেন) -->
+    <main>
+        <section id="about"></section>
+        <section id="projects"></section>
+        <section id="skills"></section>
+        <section id="contact"></section>
+    </main>
 </body>
 
 </html>

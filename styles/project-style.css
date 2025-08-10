@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+img {
+    width: 100%;
+}
+.card-shadow{
+    /* -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0); */
+    /* box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0); */
+    box-shadow: 5px 5px 0px 0px #A1D8FF, 10px 10px 0px 0px #CAE6FF, 15px 15px 0px 0px  #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.card-shadow-2{
+    /* CSS scan #14 */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 100px -20px, rgba(0, 0, 0, 0.3) 0px 0px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card-shadow-3{
+    /* CSS scan #28 */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-shadow-4{
+    /* CSS scan #62 */
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.card-shadow-5{
+    /* CSS scan #2 */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card-shadow-6{
+    /* CSS scan #48 */
+      box-shadow: 
+    rgba(240, 46, 170, 0.4) -5px 5px, 
+    rgba(240, 46, 170, 0.3) -10px 10px, 
+    rgba(240, 46, 170, 0.2) -15px 15px, 
+    rgba(240, 46, 170, 0.1) -20px 20px, 
+    rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.card-shadow-6-modified-gpt-1{
+    box-shadow: 
+  rgba(123, 104, 238, 0.4) -5px 5px,   /* medium purple */
+  rgba(106, 90, 205, 0.3) -10px 10px,  /* slate purple */
+  rgba(72, 61, 139, 0.2) -15px 15px,   /* dark slate blue */
+  rgba(65, 105, 225, 0.1) -20px 20px,  /* royal blue */
+  rgba(70, 130, 180, 0.05) -25px 25px; /* steel blue */
+
+}
+.card-shadow-6-modified-gpt-2{
+    box-shadow: 
+  rgba(137, 207, 240, 0.35) -5px 5px,    /* light sky blue */
+  rgba(123, 104, 238, 0.25) -10px 10px,  /* medium purple */
+  rgba(106, 90, 205, 0.2) -15px 15px,    /* slate purple */
+  rgba(72, 61, 139, 0.15) -20px 20px,    /* dark slate blue */
+  rgba(65, 105, 225, 0.1) -25px 25px;    /* royal blue */
+
+}
+.card-shadow-6-modified-gpt-3{
+    box-shadow: 
+  rgba(173, 216, 230, 0.35) -5px 5px,    /* light blue */
+  rgba(186, 148, 255, 0.25) -10px 10px,  /* soft lavender */
+  rgba(200, 162, 255, 0.2) -15px 15px,   /* light violet */
+  rgba(221, 187, 255, 0.15) -20px 20px,  /* pale purple */
+  rgba(240, 220, 255, 0.1) -25px 25px;   /* almost white lilac */
+
+}
+.card-shadow-6-modified-self-1{
+    box-shadow: 
+    rgba(198, 46, 240, 0.4) -5px 5px, 
+    rgba(198, 46, 240, 0.3) -10px 10px, 
+    rgba(198, 46, 240, 0.2) -15px 15px, 
+    rgba(198, 46, 240, 0.1) -20px 20px, 
+    rgba(198, 46, 240, 0.05) -25px 25px;
+}
+/* content styling starts here */
+
+.project-card {
+    /* border: 2px solid palevioletred; */
+    background-color: rgba(175, 238, 238, 0.26);
+    border-radius: 80px 0px;
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    align-items: center;
+    /* box-shadow: 5px 10px #888888; */
+    margin-top: 100px;
+}
+
+
+.project-card .project-card-left,
+.project-card-right {
+    /* border: 2px solid paleturquoise; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card .project-card-left {
+    color: purple;
+    border-top-left-radius: 80px;
+    text-align: center;
+    background-color: rgb(208, 239, 251);
+}
+
+.project-card .project-card-right {
+    border-bottom-right-radius: 80px;
+    overflow: hidden;
+    padding: 5px;
+}
+.project-card .project-card-right .image-container{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 75px;
+    overflow: hidden;
+}
+
+.project-card .project-card-right img {
+    height: 100%;
+}
+.project-card-middle{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* content styling ends here */
+
+/* footer styling starts */
+body{
+      margin:0;
+      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6;
+    }
+.social{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      margin-top:10px;
+      font-size:18px;
+    }
+    .social a{
+      color:#fff;
+      width:36px;height:36px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      transition:transform .15s ease, background .15s ease, color .15s ease;
+    }
+    .social a:hover{transform:translateY(-2px);background:rgba(255,255,255,.18);}
+
+
+/* footer styling ends */
