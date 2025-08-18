@@ -31,6 +31,27 @@ body {
     background: #fff
 }
 
+/* ===============LOGO============== */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: var(--brand);
+}
+
+.brand .logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* background: #111; */
+    background: var(--brand);
+    color: #fff;
+    font-weight: 800;
+}
+
 /* ========== Navbar (glass, fixed) ========== */
 .nav {
     position: fixed;
@@ -52,7 +73,7 @@ body {
 }
 
 .brand {
-    color: #fff;
+    color: #403131;
     text-decoration: none;
     font-weight: 800;
     letter-spacing: .5px

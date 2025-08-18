@@ -34,6 +34,29 @@ body {
     background: #fff
 }
 
+/* =========LOGO========= */
+
+.brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            color: var(--ring);
+        }
+
+        .brand .logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            /* background: #111; */
+            background: var(--ring);
+            color: #fff;
+            font-weight: 800;
+        }
+
+
 /* ===== Navbar ===== */
 .nav {
     position: fixed;
